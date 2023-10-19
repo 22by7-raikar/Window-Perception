@@ -1,14 +1,14 @@
 env:
-  main_path: "~/Desktop/AerialRobotics/apairaikar_p3a/maps"
+  main_path: "~/Desktop/Window-Perception/maps"
   map_file: "example.txt"
 
 textures:
-  main_path: "~/Desktop/AerialRobotics/apairaikar_p3a/textures"
+  main_path: "~/Desktop/Window-Perception/textures"
   pic: "Window.png"
   pptx: "Windows.pptx"
 
 blender_location:
-  main_path: "~/Desktop/AerialRobotics/apairaikar_p3a/"
+  main_path: "~/Desktop/Window-Perception/"
   file_name: "main.blend"    
 
 
