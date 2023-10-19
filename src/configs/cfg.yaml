@@ -1,0 +1,15 @@
+env:
+  main_path: "~/Desktop/WindowPerception/maps"
+  map_file: "example.txt"
+
+textures:
+  main_path: "~/Desktop/WindowPerception/textures"
+  pic: "Window.png"
+  pptx: "Windows.pptx"
+
+blender_location:
+  main_path: "~/Desktop/WindowPerception/"
+  file_name: "main.blend"    
+
+
+
