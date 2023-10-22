@@ -28,19 +28,53 @@ class quad_control:
         self.minRate = -self.maxRate
         minAct = -maxAct
         
-        # PID GAINS HERE! (kp, ki, kd, filter_tau, dt, dim = 1, minVal = -1, maxVal = 1)
-        # NED position controller. GAINS HERE
+        # EDIT PID GAINS HERE! (kp, ki, kd, filter_tau, dt, dim = 1, minVal = -1, maxVal = 1)
+        # NED position controller. EDIT GAINS HERE
 
-        #Good NED position controller. GAINS HERE
+        # Tried. parameters.
+        # # NED position controller. EDIT GAINS HERE
+        # self.x_pid = pid(2, 0.1, 0.1, filter_tau, dt, minVal = minVel, maxVal=maxVel)
+        # self.y_pid = pid(2, 0.1, 0.1, filter_tau, dt, minVal = minVel, maxVal=maxVel)
+        # self.z_pid = pid(1, 0.3, 0.1, filter_tau, dt, minVal = minVel, maxVal=maxVel)
+
+        # # NED velocity controller. EDIT GAINS HERE
+        # self.vx_pid = pid(5, 2, 1, filter_tau, dt, minVal = minAcc, maxVal=maxAcc)
+        # self.vy_pid = pid(5, 2, 1, filter_tau, dt, minVal = minAcc, maxVal=maxAcc)
+        # self.vz_pid = pid(2, 0.1, 0.01, filter_tau, dt, minVal = minAcc, maxVal = maxAcc)
+
+
+        #Good NED position controller. EDIT GAINS HERE
         self.x_pid = pid(1, 0.1, 0, filter_tau, dt, minVal = minVel, maxVal=maxVel)
         self.y_pid = pid(1, 0.1, 0, filter_tau, dt, minVal = minVel, maxVal=maxVel)
         self.z_pid = pid(1, 0, 0, filter_tau, dt, minVal = minVel, maxVal=maxVel)
 
-        #Good NED velocity controller. GAINS HERE
+        #Good NED velocity controller. EDIT GAINS HERE
         self.vx_pid = pid(1, 0, 0, filter_tau, dt, minVal = minAcc, maxVal=maxAcc)
         self.vy_pid = pid(1, 0, 0, filter_tau, dt, minVal = minAcc, maxVal=maxAcc)
         self.vz_pid = pid(3, 0.3, 0.1, filter_tau, dt, minVal = minAcc, maxVal = maxAcc)
 
+        
+        # NED velocity controller. EDIT GAINS HERE
+        # self.vx_pid = pid(1, 0.1, 0.1, filter_tau, dt, minVal = minAcc, maxVal=maxAcc)
+        # self.vy_pid = pid(1, 0.1, 0.1, filter_tau, dt, minVal = minAcc, maxVal=maxAcc)
+        # self.vz_pid = pid(3, 0.3, 0.1, filter_tau, dt, minVal = minAcc, maxVal = maxAcc)
+
+        # #Just tried. NED position controller. EDIT GAINS HERE
+        # self.x_pid = pid(0.6, 0, 0, filter_tau, dt, minVal = minVel, maxVal=maxVel)
+        # self.y_pid = pid(0.6, 0, 0, filter_tau, dt, minVal = minVel, maxVal=maxVel)
+        # self.z_pid = pid(1, 0, 0, filter_tau, dt, minVal = minVel, maxVal=maxVel)
+
+
+
+        # self.x_pid = pid(20, 0.02, 1.0, filter_tau, dt, minVal = minVel, maxVal=maxVel)
+        # self.y_pid = pid(25, 0.50, 1.0, filter_tau, dt, minVal = minVel, maxVal=maxVel)
+        # self.z_pid = pid(0.1, 2.0, 1.0, filter_tau, dt, minVal = minVel, maxVal=maxVel)
+
+        # # NED velocity controller. EDIT GAINS HERE
+        # self.vx_pid = pid(0.18, 1, 5, filter_tau, dt, minVal = minAcc, maxVal=maxAcc)
+        # self.vy_pid = pid(12, 0.5267, 3, filter_tau, dt, minVal = minAcc, maxVal=maxAcc)
+        # self.vz_pid = pid(30., 9, 0.5534, filter_tau, dt, minVal = minAcc, maxVal = maxAcc)
+        
         # Quaternion based P Controller. Output is desired angular rate. tau is time constant of closed loop
         self.tau_angle = 0.3
         self.angle_sf = np.array((1, 1, 0.4)) # deprioritize yaw control using this scale factor

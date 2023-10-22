@@ -11,14 +11,16 @@ class state_machine: #main controller class
 
         ### Motion Profile - sample code - EDIT HERE! ######################################################
         # For tuning the PID, utilize the following code. Once tuned, modify this section as you want! 
-        self.MP = np.genfromtxt("/home/ankush/Desktop/Window-Perception/trajectories/traj.csv", delimiter=',', skip_header=0)
+        self.MP = np.genfromtxt("/home/ankush/Desktop/sample_traj9.csv", delimiter=',', skip_header=0)
         print(self.MP)
         print(self.MP.shape)
         self.activeIndex = 0
 
+
         # start and goal locations
 
         ####################################################################################################
+
 
         # Logger
         self.time_array = 0

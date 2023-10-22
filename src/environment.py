@@ -1,12 +1,13 @@
+import numpy as np
+import random
+import math
+import bpy
 import os
 import yaml
-from scipy import io
-import bpy
-import math
 
-curr_dir = os.path.dirname(os.path.abspath(__file__))
+curr_dir = os.path.dirname('/home/ankush/Desktop/abhardwaj_p3a/')
 
-with open(os.path.join(curr_dir, 'configs/cfg.yaml')) as file:
+with open(os.path.join(curr_dir, 'src/configs/cfg.yaml')) as file:
     try:
         print(curr_dir)
         cfg = yaml.safe_load(file)
@@ -14,82 +15,12 @@ with open(os.path.join(curr_dir, 'configs/cfg.yaml')) as file:
     except yaml.YAMLError as exception:
         print(exception)
 
-# Clear existing mesh objects
-bpy.ops.wm.read_factory_settings(use_empty=True)
+env_path = cfg['env']['main_path']
+map_file = cfg['env']['map_file']
+env_file = os.path.expanduser(os.path.join(env_path, map_file))
 
-def setup_window_material(texture_path):
-    # Create a new material for the window
-    window_material = bpy.data.materials.new(name="WindowMaterial")
-
-    # Enable 'Use nodes' for the material
-    window_material.use_nodes = True
-
-    # Get the material node tree
-    node_tree = window_material.node_tree
-
-    # Clear default nodes
-    for node in node_tree.nodes:
-        node_tree.nodes.remove(node)
-
-    # Add a ShaderNodeTexImage node to load the texture
-    texture_node = node_tree.nodes.new('ShaderNodeTexImage')
-    texture_node.location = (0, 0)
-    texture_node.image = bpy.data.images.load(texture_path)
-
-    # Add a ShaderNodeBsdfPrincipled node
-    principled_node = node_tree.nodes.new('ShaderNodeBsdfPrincipled')
-    principled_node.location = (300, 0)
-
-    # Connect the texture node to the principled shader node
-    node_tree.links.new(texture_node.outputs["Color"], principled_node.inputs["Base Color"])
-
-    # Connect the principled shader node to the material output
-    material_output = node_tree.nodes["Material Output"]
-    node_tree.links.new(principled_node.outputs["BSDF"], material_output.inputs["Surface"])
-
-    return window_material
-
-def create_boundary(x0, y0, z0, x1, y1, z1):
-    # Create a new mesh for the boundary
-    bpy.ops.mesh.primitive_cube_add(size=1)
-    boundary = bpy.context.object
-    boundary.scale = [(x1 - x0) / 2, (y1 - y0) / 2, (z1 - z0) / 2]
-    boundary.location = [(x0 + x1) / 2, (y0 + y1) / 2, (z0 + z1) / 2]
-
-def create_window(x, y, z, xdelta, ydelta, zdelta, qw, qx, qy, qz, xangdelta, yangdelta, zangdelta, texture_path):
-    # Create a new mesh for the window
-    bpy.ops.mesh.primitive_cube_add(size=1)
-    window = bpy.context.object
-    window.scale = [xdelta, ydelta, zdelta]
-    window.location = [x, y, z]
-
-    # Set the window orientation using the quaternion
-    window.rotation_quaternion = [qw, qx, qy, qz]
-
-    # Apply Euler angle variation
-    bpy.context.active_object.rotation_euler = [xangdelta, yangdelta, zangdelta]
-
-    # Add a texture to the window object
-    if texture_path:
-        # Create a new material
-        window_material = bpy.data.materials.new(name="Window_Material")
-
-        # Assign the material to the window object
-        window.data.materials.append(window_material)
-
-        # Create an image texture node
-        image_texture = window_material.node_tree.nodes.new('ShaderNodeTexImage')
-        image_texture.image = bpy.data.images.load(texture_path)
-
-        # Connect the image texture to the material's surface
-        shader_node = window_material.node_tree.nodes["Principled BSDF"]
-        window_material.node_tree.links.new(shader_node.inputs["Base Color"], image_texture.outputs["Color"])
-
-def create_block(xmin, ymin, zmin, xmax, ymax, zmax, r, g, b, robot_width, robot_length, robot_height):
-    bloat_width = robot_width/2
-    bloat_length = robot_length/2
-    bloat_height = robot_height/2
-    bpy.ops.mesh.primitive_cube_add(scale=((xmax-xmin)/2 + (bloat_width), (ymax-ymin)/2 + (bloat_length), (zmax-zmin)/2 + (bloat_height)))
+def create_block(xmin, ymin, zmin, xmax, ymax, zmax, r, g, b):
+    bpy.ops.mesh.primitive_cube_add(scale=((xmax-xmin)/2, (ymax-ymin)/2, (zmax-zmin)/2))
     block = bpy.context.active_object
     block.location.x = (xmax+xmin) / 2
     block.location.y = (ymax+ymin) / 2
@@ -98,13 +29,27 @@ def create_block(xmin, ymin, zmin, xmax, ymax, zmax, r, g, b, robot_width, robot
     block.data.materials.append(material)
     material.diffuse_color = (r / 255, g / 255, b / 255, 1)
 
-
-def create_sphere(location, r, g, b, radius = 0.01):
+def create_sphere(location, r, g, b, radius):
     bpy.ops.mesh.primitive_uv_sphere_add(radius=radius, location=location)
     sphere = bpy.context.active_object
     material = bpy.data.materials.new(name="SphereMaterial")
     sphere.data.materials.append(material)
     material.diffuse_color = (r / 255, g / 255, b / 255, 1)
+   
+def create_boundary(xmin, ymin, zmin, xmax, ymax, zmax, transparency):
+    bpy.ops.mesh.primitive_cube_add(scale=((xmax-xmin)/2, (ymax-ymin)/2, (zmax-zmin)/2))
+    boundary = bpy.context.active_object
+    boundary.display_type = 'WIRE'
+    boundary.location.x = (xmax+xmin) / 2
+    boundary.location.y = (ymax+ymin) / 2
+    boundary.location.z = (zmax+zmin) / 2
+    material = bpy.data.materials.new(name="BoundaryMaterial")
+    boundary.data.materials.append(material)
+    material.diffuse_color = (0, 0, 0, 1)
+    material.use_nodes = True
+    principled_bsdf = material.node_tree.nodes.get('Principled BSDF')
+    if principled_bsdf:
+        principled_bsdf.inputs['Alpha'].default_value = 1 - transparency
 
 def create_cylinder(p1, p2, radius=0.01):
     dx = p2[0] - p1[0]
@@ -117,15 +62,64 @@ def create_cylinder(p1, p2, radius=0.01):
     bpy.context.active_object.rotation_euler[1] = theta
     bpy.context.active_object.rotation_euler[2] = phi
 
+#def setup_window_material(texture_path):
+#    window_material = bpy.data.materials.new(name="WindowMaterial")
+#    window_material.use_nodes = True
+#    node_tree = window_material.node_tree
 
-# def create_nodes_spheres(path_found):
-#     for i in range(1, len(path)):
-#         create_sphere(path[i], 0, 0, 255, radius=0.05)
-#         create_cylinder(path[i], path[i -1])
-        
-        
+#    for node in node_tree.nodes:
+#        node_tree.nodes.remove(node)
+
+#    texture_node = node_tree.nodes.new('ShaderNodeTexImage')
+#    texture_node.location = (0, 0)
+#    texture_node.image = bpy.data.images.load(texture_path)
+#    principled_node = node_tree.nodes.new('ShaderNodeBsdfPrincipled')
+#    principled_node.location = (300, 0)
+#    node_tree.links.new(texture_node.outputs["Color"], principled_node.inputs["Base Color"])
+#    material_output = node_tree.nodes["Material Output"]
+#    node_tree.links.new(principled_node.outputs["BSDF"], material_output.inputs["Surface"])
+
+#    return window_material
+
+def create_window(x, y, z, xdelta, ydelta, zdelta, qw, qx, qy, qz, xangdelta, yangdelta, zangdelta, text_path):
+    # Create a new mesh for the window
+    x_offset = random.uniform(-xdelta, xdelta)
+    y_offset = random.uniform(-ydelta, ydelta)
+    z_offset = random.uniform(-zdelta, zdelta)
+    x_angle_offset = math.radians(random.uniform(-xangdelta, xangdelta))
+    y_angle_offset = math.radians(random.uniform(-yangdelta, yangdelta))
+    z_angle_offset = math.radians(random.uniform(-zangdelta, zangdelta))
+    
+    # Apply the offsets to the center and orientation
+    x += x_offset
+    y += y_offset
+    z += z_offset
+    qw, qx, qy, qz = qw + x_angle_offset, qx + y_angle_offset, qy + z_angle_offset, qz
+
+    # Create a new mesh for the window
+    bpy.ops.mesh.primitive_plane_add(size=1, enter_editmode=False, align='WORLD', location=(x, y, z))
+    window = bpy.context.object
+
+    # Rotate the plane to match the orientation
+    window.rotation_quaternion = [qw, qx, qy, qz]
+    window.scale.z = zdelta
+    bpy.context.active_object.rotation_euler = [xangdelta, yangdelta, zangdelta]
+    bpy.context.view_layer.update()
+    
+    if text_path:
+        window_material = bpy.data.materials.new(name="Window_Material")
+        window.data.materials.append(window_material)
+        window.active_material.use_nodes = True
+        shader_node = window_material.node_tree.nodes["Principled BSDF"]
+        image_texture = window_material.node_tree.nodes.new('ShaderNodeTexImage')
+        image_texture.image = bpy.data.images.load(text_path)
+
+        window_material.node_tree.links.new(shader_node.inputs["Base Color"], image_texture.outputs["Color"])
+
+
 def clear_scene():
     bpy.ops.object.select_all(action='DESELECT')
     bpy.ops.object.select_by_type(type='MESH')
     bpy.ops.object.delete()
 
+clear_scene()

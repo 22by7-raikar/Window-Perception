@@ -1,14 +1,14 @@
 env:
-  main_path: "~/Desktop/WindowPerception/maps"
+  main_path: "~/Desktop/abhardwaj_p3a/maps"
   map_file: "example.txt"
 
 textures:
-  main_path: "~/Desktop/WindowPerception/textures"
+  main_path: "~/Desktop/abhardwaj_p3a/textures"
   pic: "Window.png"
   pptx: "Windows.pptx"
 
 blender_location:
-  main_path: "~/Desktop/WindowPerception/"
+  main_path: "~/Desktop/abhardwaj_p3a/"
   file_name: "main.blend"    
 
 

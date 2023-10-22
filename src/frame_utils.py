@@ -1,6 +1,5 @@
 import math
 import numpy as np
-
 def ned_to_enu_quaternion(ned_quat):
     enu_quat = np.array([ned_quat[1], ned_quat[0], -ned_quat[2], -ned_quat[3]])
     return enu_quat
