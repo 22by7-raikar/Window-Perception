@@ -1,42 +1,45 @@
 import bpy
 import math
 
-# Set the output directory
-output_directory = "/home/ankush/Desktop/abhardwaj_p3a/output_images"
+def position_camera(cam, angle_x, angle_y, x,y, focus_target):
+    # Position the camera
+    cam.location = (x, y, 0)
+    
+    # Clear existing track_to constraints from the camera
+    for constraint in cam.constraints:
+        if constraint.type == 'TRACK_TO':
+            cam.constraints.remove(constraint)
 
+    # Add track_to constraint to point the camera at the focus_target
+    track_to = cam.constraints.new(type='TRACK_TO')
+    track_to.target = focus_target
+    track_to.track_axis = 'TRACK_NEGATIVE_Z'
+    track_to.up_axis = 'UP_Y'
+    
+    # Rotate the camera around the Z-axis
+    cam.rotation_euler[2] = math.radians(angle_x)
+    
+    # Rotate the camera up or down around its local X-axis
+    cam.rotation_euler[0] = math.radians(angle_y)
 
-# Set the number of photos and angles
-num_photos = 36  # Change the number of photos as needed
-angle_increment = 360.0 / num_photos
+# Ensure you're in object mode
+bpy.ops.object.mode_set(mode='OBJECT')
 
-# Set the camera parameters
-camera_distance = 5.0  # Distance from the object
-camera_height = 2.0  # Height of the camera above the object
+# Get the focus target and camera
+focus_target = bpy.data.objects['Plane.001']
+cam = bpy.data.objects['NN_cam']
 
-# Set the output format and output file type
-output_format = 'PNG'  # Change the image format if needed
-
-# Set the output resolution (optional)
-bpy.context.scene.render.resolution_x = 1920
-bpy.context.scene.render.resolution_y = 1080
-
-# Loop through different angles and render images
-for i in range(num_photos):
-    angle = math.radians(i * angle_increment)
-    camera = bpy.data.objects["Camera"]  # Assuming your camera is named "Camera"
-    camera.location.x = camera_distance * math.cos(angle)
-    camera.location.y = camera_distance * math.sin(angle)
-    camera.location.z = camera_height
-    camera.rotation_euler = (0, 0, angle)
-
-    # Set the output file path based on the angle
-    output_file = f"{output_directory}photo_{i:03d}.{output_format.lower()}"
-
-    # Render the image
-    bpy.ops.render.render(write_still=True)
-
-# Delete the camera (optional)
-bpy.ops.object.select_all(action='DESELECT')
-camera.select_set(True)
-bpy.ops.object.delete()
+# Parameters for camera positioning
+angles_x = [0, 90, 180, 270]  # Around the object in the XZ plane
+angles_y = [0, 30, 60, -30, -60]  # Above and below the object
+radiusy = [0,0.5,1,1.5]  # Distance from the focus_target
+radiusx = [0,0.5,1,1.5]
+# Position camera at different angles and render images
+render_path = "/home/ankush/Desktop/abhardwaj_p3a/output_images1/"  # Modify this path as needed
+for y in radiusy:
+    for x in radiusx:
+        position_camera(cam, 0, 0, x,y, focus_target)
+        bpy.context.scene.camera = cam
+        bpy.context.scene.render.filepath = f"{render_path}render{x}_{y}.png"
+        bpy.ops.render.render(write_still=True)
 
