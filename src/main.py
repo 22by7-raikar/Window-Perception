@@ -122,7 +122,7 @@ def main():
                  
                 elif line_parts[0] == "window":
                     x, y, z, xdelta, ydelta, zdelta, qw, qx, qy, qz, xangdelta, yangdelta, zangdelta = map(float, line_parts[1:])
-                    create_window(x, y, z, xdelta, ydelta, zdelta, qw, qx, qy, qz, xangdelta, yangdelta, zangdelta, texture_path) #Use the window material with the texture
+                    create_window(x, y, z, xdelta, ydelta, zdelta, qw, qx, qy, qz, xangdelta, yangdelta, zangdelta, texture_path) 
     
     # CONSTANTS
     fps = 20
