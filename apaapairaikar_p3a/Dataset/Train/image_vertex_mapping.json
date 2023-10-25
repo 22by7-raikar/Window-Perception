@@ -1,0 +1,1378 @@
+{
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render0_0.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                71.71451840995728,
+                169.50400089369464
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                113.17654989860743,
+                39.06113575366655
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                211.3656976572098,
+                208.7906473939767
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                245.78991913064772,
+                71.89530288155092
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                133.65262696986764,
+                75.83161408889637
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                206.19653662200616,
+                94.5265625182972
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                187.87229727102672,
+                166.09516198013642
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                112.85812775326421,
+                146.31932645375576
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                133.65262696986764,
+                75.83161408889637
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                206.19653662200616,
+                94.5265625182972
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                187.87229727102672,
+                166.09516198013642
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                112.85812775326421,
+                146.31932645375576
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render0.5_0.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                62.935567404094634,
+                178.49603835985997
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                107.9915405634081,
+                33.34578964311618
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                220.367581211643,
+                220.58177168671617
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                257.3599966750075,
+                61.32588153827385
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                130.40319514959845,
+                72.18767801329287
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                212.05374365715835,
+                89.1201958775896
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                192.27453444436526,
+                171.4295409394475
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                107.78504071158815,
+                151.3392671510012
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                130.40319514959845,
+                72.18767801329287
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                212.05374365715835,
+                89.1201958775896
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                192.27453444436526,
+                171.4295409394475
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                107.78504071158815,
+                151.3392671510012
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render1_0.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                56.96899402816102,
+                190.39619237991664
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                103.82454595217669,
+                29.984104802288215
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                230.75240958136692,
+                233.3740852993969
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                268.9072086012702,
+                45.58883396336145
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                127.53482492473127,
+                69.59020240549745
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                217.51881821350395,
+                81.26180145183037
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                196.9875528591783,
+                176.63570920223628
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                103.91423654496025,
+                158.1780296329689
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                127.53482492473127,
+                69.59020240549745
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                217.51881821350395,
+                81.26180145183037
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                196.9875528591783,
+                176.63570920223628
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                103.91423654496025,
+                158.1780296329689
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render1.5_0.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                58.61218135036026,
+                205.16258256233013
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                102.88662983474356,
+                30.962379754205443
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                240.21698107252377,
+                245.05531442751817
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                276.0042564841715,
+                22.56011011254361
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                126.3623488649682,
+                69.24369572860698
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                220.08473436502334,
+                70.17265401931346
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                200.61408820023638,
+                180.40121075328753
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                103.86072878299233,
+                166.99889560533165
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                126.3623488649682,
+                69.24369572860698
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                220.08473436502334,
+                70.17265401931346
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                200.61408820023638,
+                180.40121075328753
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                103.86072878299233,
+                166.99889560533165
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render0_0.5.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                60.56455971448747,
+                170.76563777160854
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                110.16703026038002,
+                29.813414848698073
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                213.8389750280153,
+                217.43654214881792
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                250.18744449037428,
+                73.95579615231995
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                132.02644264344065,
+                70.89597352691536
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                209.30833860207946,
+                95.27858760869631
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                189.3418370837983,
+                170.8158185866497
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                107.7874360375327,
+                146.53173743292538
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                132.02644264344065,
+                70.89597352691536
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                209.30833860207946,
+                95.27858760869631
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                189.3418370837983,
+                170.8158185866497
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                107.7874360375327,
+                146.53173743292538
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render0.5_0.5.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                44.901189941558485,
+                181.20828143268108
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                102.57182666887083,
+                21.232051567291165
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                226.17190727461295,
+                233.80587245398496
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                265.9344832003742,
+                63.66518385946068
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                127.33581685073331,
+                65.51627360301237
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                217.7444410479058,
+                89.81575332914346
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                195.4641275397037,
+                178.3585381707471
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                99.34371929060445,
+                152.11305140803853
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                127.33581685073331,
+                65.51627360301237
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                217.7444410479058,
+                89.81575332914346
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                195.4641275397037,
+                178.3585381707471
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                99.34371929060445,
+                152.11305140803853
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render1_0.5.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                29.14615016920792,
+                196.78022865518193
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                94.87804937539099,
+                15.684040173002558
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                243.41383421687598,
+                253.61687470758844
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                284.94577301237774,
+                46.68639918787724
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                122.2027226394062,
+                61.3111577824684
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                227.57390710725963,
+                80.96147927441473
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                203.42520136315616,
+                186.5039159905405
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                90.42327063731418,
+                160.66104663374918
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                122.2027226394062,
+                61.3111577824684
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                227.57390710725963,
+                80.96147927441473
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                203.42520136315616,
+                186.5039159905405
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                90.42327063731418,
+                160.66104663374918
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render1.5_0.5.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                21.042324644012464,
+                220.2330389316625
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                90.16140426587575,
+                18.139145349783405
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                265.59440883289756,
+                274.011432763395
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                303.2868322507983,
+                16.644199460305146
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                118.30246937300977,
+                61.14430568765707
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                236.15918384572498,
+                65.77937506062
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                212.29731979151643,
+                192.75128242104614
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                84.7820497323582,
+                174.07234736631477
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                118.30246937300977,
+                61.14430568765707
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                236.15918384572498,
+                65.77937506062
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                212.29731979151643,
+                192.75128242104614
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                84.7820497323582,
+                174.07234736631477
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render0_1.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                52.09948718072111,
+                169.59188693120632
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                109.50498416443787,
+                20.238942458204008
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                213.18104470473094,
+                225.06775297782968
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                249.84938991919614,
+                78.70452889936115
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                131.78088502613008,
+                65.91607971784259
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                210.0016196088054,
+                97.48382534453759
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                189.1858914433314,
+                175.1921837702075
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                104.57653501669674,
+                145.338795581584
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                131.78088502613008,
+                65.91607971784259
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                210.0016196088054,
+                97.48382534453759
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                189.1858914433314,
+                175.1921837702075
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                104.57653501669674,
+                145.338795581584
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render0.5_1.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                28.06918788361518,
+                179.45629360218575
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                99.95612641892271,
+                7.353776196074392
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                227.5196689692225,
+                246.6712978608504
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                267.7970706389844,
+                71.4198933123437
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                125.9757303499755,
+                58.063289355119025
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                220.22891249495842,
+                93.39962916109744
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                196.4383754426169,
+                185.45458189154164
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                92.5774256522443,
+                150.2266423214452
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                125.9757303499755,
+                58.063289355119025
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                220.22891249495842,
+                93.39962916109744
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                196.4383754426169,
+                185.45458189154164
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                92.5774256522443,
+                150.2266423214452
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render1_1.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                -4.023668662493188,
+                195.11244288725288
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                88.3752625856731,
+                -3.001536481393316
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                251.0979500528421,
+                276.44296821679063
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                292.52278944558236,
+                59.31294685264672
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                118.41844158476711,
+                50.71319031507966
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                234.23170735897833,
+                86.64489980916935
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                207.54579888343108,
+                198.17633248017566
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                76.43442807586611,
+                158.08055893439052
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                118.41844158476711,
+                50.71319031507966
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                234.23170735897833,
+                86.64489980916935
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                207.54579888343108,
+                198.17633248017566
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                76.43442807586611,
+                158.08055893439052
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render1.5_1.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                -39.47543614444488,
+                224.40487123907235
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                77.1063417093234,
+                -0.5674506528583549
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                293.2466941153722,
+                313.80504908755756
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                324.64775237228815,
+                33.82387758637316
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                109.92574689566375,
+                49.412553271750625
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                251.88559702107014,
+                72.65133876236229
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                224.7333770657844,
+                209.99596662271875
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                57.79421756078486,
+                173.27860557549297
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                109.92574689566375,
+                49.412553271750625
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                251.88559702107014,
+                72.65133876236229
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                224.7333770657844,
+                209.99596662271875
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                57.79421756078486,
+                173.27860557549297
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render0_1.5.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                50.29688237714028,
+                165.7039397214976
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                112.52374290862114,
+                11.886125656731338
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                208.30531737219678,
+                230.00184071810298
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                243.4184618557298,
+                85.24662341677305
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                133.63521565380353,
+                61.76149577367579
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                207.24271989924063,
+                100.78279077942722
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                186.75888009870926,
+                178.32150471363028
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                105.04028493364004,
+                142.75620430204435
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                133.63521565380353,
+                61.76149577367579
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                207.24271989924063,
+                100.78279077942722
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                186.75888009870926,
+                178.32150471363028
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                105.04028493364004,
+                142.75620430204435
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render0.5_1.5.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                20.69463235973826,
+                171.68455855728797
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                103.13638705498597,
+                -6.158638206888412
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                221.18004203254503,
+                255.73521195783283
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                259.3550191073358,
+                83.13769598552909
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                128.02491520672592,
+                51.1463078502897
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                216.9399005791067,
+                99.41602101879238
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                193.42151689279686,
+                191.02788489357795
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                91.4976321756709,
+                145.24579213149647
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                128.02491520672592,
+                51.1463078502897
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                216.9399005791067,
+                99.41602101879238
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                193.42151689279686,
+                191.02788489357795
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                91.4976321756709,
+                145.24579213149647
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render1_1.5.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                -27.11906042337384,
+                177.55508396980497
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                90.89006623691695,
+                -24.928873169523285
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                243.57406924710256,
+                295.2613664836181
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                281.73539270717106,
+                82.55593498456554
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                120.18002309444725,
+                38.885988885196525
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                230.89449356532995,
+                98.82590099393218
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                204.27139925727957,
+                209.0349318839274
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                70.54838403340003,
+                147.30630981749178
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                120.18002309444725,
+                38.885988885196525
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                230.89449356532995,
+                98.82590099393218
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                204.27139925727957,
+                209.0349318839274
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                70.54838403340003,
+                147.30630981749178
+            ]
+        }
+    ],
+    "/home/anuj/Desktop/AerialRobotics/apairaikar_p3a/Dataset/Train/Images/render1.5_1.5.png": [
+        {
+            "vertex_index": 0,
+            "image_coordinates": [
+                -108.02315677514346,
+                180.7981923175293
+            ]
+        },
+        {
+            "vertex_index": 1,
+            "image_coordinates": [
+                76.2899408176592,
+                -32.22983494427035
+            ]
+        },
+        {
+            "vertex_index": 2,
+            "image_coordinates": [
+                291.2252468192793,
+                358.6382711377362
+            ]
+        },
+        {
+            "vertex_index": 3,
+            "image_coordinates": [
+                314.28912650664955,
+                85.00114595508904
+            ]
+        },
+        {
+            "vertex_index": 4,
+            "image_coordinates": [
+                109.48044044552576,
+                30.665638272491833
+            ]
+        },
+        {
+            "vertex_index": 5,
+            "image_coordinates": [
+                251.64313621289676,
+                99.91883426498177
+            ]
+        },
+        {
+            "vertex_index": 6,
+            "image_coordinates": [
+                224.320807725574,
+                232.34527480974023
+            ]
+        },
+        {
+            "vertex_index": 7,
+            "image_coordinates": [
+                36.95786984757881,
+                147.66353593938516
+            ]
+        },
+        {
+            "vertex_index": 8,
+            "image_coordinates": [
+                109.48044044552576,
+                30.665638272491833
+            ]
+        },
+        {
+            "vertex_index": 9,
+            "image_coordinates": [
+                251.64313621289676,
+                99.91883426498177
+            ]
+        },
+        {
+            "vertex_index": 10,
+            "image_coordinates": [
+                224.320807725574,
+                232.34527480974023
+            ]
+        },
+        {
+            "vertex_index": 11,
+            "image_coordinates": [
+                36.95786984757881,
+                147.66353593938516
+            ]
+        }
+    ]
+}
